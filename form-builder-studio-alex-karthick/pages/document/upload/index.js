@@ -680,7 +680,7 @@ export default function Home() {
               </span>
             </div>
           </div> */}
-                    <div style={{ backgroundColor: "#f6f7f9", marginTop: '8px', overflow: 'auto', marginLeft: '-7px', width: '101%' }}>
+                    <div style={{ backgroundColor: "#f6f7f9", marginTop: '8px', overflow: 'hidden', marginLeft: '-7px', width: '100%' }}>
                         <p className="m-0">
                             <div style={{ display: 'flex', padding: '0px' }}>
 
@@ -696,12 +696,12 @@ export default function Home() {
   </div>*/}
                             </div>
                         </p>
-                        <div className="grid justify-content-center">
-                            <div className={""} style={{ display: 'flex', gap: '20px', marginLeft: '-10px', marginTop: '8px', width: '20%' }}>
+                        <div className="grid justify-content-start">
+                            <div className={""} style={{ display: 'flex', gap: '20px', marginLeft: '2px', marginTop: '8px', width: '20%' }}>
 
                                 <Card className={'card justify-content-center'} title="" style={{ backgroundColor: '#eff2f6', alignItems: 'center' }}>
 
-                                    <div className={'card pt-0'}>
+                                    <div className={'card pt-0'} style={{ paddingLeft: '8px' }}>
                                         <div className={'field pt-0'} style={{ marginBottom: '24px', paddingLeft: '4px' }}>
                                             <p style={{ fontWeight: 600, marginBottom: '2px', paddingLeft: '3px', color: '#104063', fontSize: '14px' }}>Department</p>
                                             <p style={{ marginTop: '0px', fontSize: '0.9em', color: '#09547f ', paddingLeft: '2px' }}>
@@ -748,7 +748,7 @@ export default function Home() {
                                             label='Save' onClick={() => saveInvoice()} autoFocus />
                                     </div>
 
-                                    <div className={'card'}>
+                                    <div className={'card'} style={{ paddingLeft: '8px' }}>
                                         <div className={'field'}>
                                             <p style={{ fontWeight: 600, marginBottom: '2px', paddingLeft: '4px', color: '#104063', fontSize: '14px' }}> Document ID</p>
                                             <p style={{ marginTop: '0px', paddingLeft: '4px', fontSize: '14px' }}>
@@ -788,7 +788,7 @@ export default function Home() {
 
 
                             </div>
-                            <div className='ml-1' style={{ display: 'flex', flexDirection: 'column', columnGap: '20px', width: '45%' }}>
+                            <div className='' style={{ display: 'flex', flexDirection: 'column', columnGap: '20px', width: '42%', marginLeft: '57px' }}>
                                 {/* <Card className="card" title=" Document view" style={{ backgroundColor: '#f7f5ed',width:'75%'}}>
    
 </Card> */}

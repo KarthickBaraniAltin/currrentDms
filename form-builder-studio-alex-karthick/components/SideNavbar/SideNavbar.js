@@ -225,50 +225,21 @@ export default function SideNavbar() {
 
 
     const node = [
-        // {
-        //   key: "0",
-        //   label: " Upload Documents",
-        //   data: "Documents Folder",
-        //   icon: "pi pi-upload",
-        //   children: [
-        //     {
-        //       key: "0-0",
-        //       label: "Document type",
-        //       data: "Work Folder",
-        //       icon: "pi pi-fw pi-cog",
-        //       children: [
-        //         {
-        //           key: "0-0-0",
-        //           label: "Department",
-        //           icon: "pi pi-fw pi-file",
-        //           data: "Expenses Document"
-        //         },
-        //         {
-        //           key: "0-0-1",
-        //           label: "description",
-        //           icon: "pi pi-fw pi-file",
-        //           data: "Resume Document"
-        //         }
-        //       ]
-        //     },
-
-        //   ]
-        // },
         {
             key: "0",
-            label: `${toggleSideNav ? 'Doc Repository' : ''}`,
+            label: "Nevada University",
             data: "Events Folder",
             icon: "pi pi-fw pi-home",
             children: [
                 {
                     key: "1",
-                    label: `${toggleSideNav ? 'Academic affairs' : ''}`,
+                    label: "Academic affairs",
                     data: "Events Folder",
                     icon: "pi pi-fw pi-sitemap",
                     children: [
                         {
                             key: "0-0",
-                            label: `${toggleSideNav ? 'ID' : ''}`,
+                            label: "ID",
                             data: "Work Folder",
                             icon: "pi pi-fw pi-inbox",
                             command: () => {
@@ -281,7 +252,7 @@ export default function SideNavbar() {
                             children: [
                                 {
                                     key: "0-0-0",
-                                    label: `${toggleSideNav ? 'Driving License' : ''}`,
+                                    label: "Driving License",
                                     icon: "pi pi-fw pi-file",
                                     data: "Expenses Document",
                                     command: () => {
@@ -294,7 +265,7 @@ export default function SideNavbar() {
                                 },
                                 {
                                     key: "0-0-1",
-                                    label: `${toggleSideNav ? 'Passport' : ''}`,
+                                    label: "Passport",
                                     icon: "pi pi-fw pi-file",
                                     data: "Resume Document",
                                     command: () => {
@@ -305,19 +276,6 @@ export default function SideNavbar() {
                                         });
                                     }
                                 }
-                                // ,{
-                                //     key: "0-0-2",
-                                //     label: `${toggleSideNav ? 'Social Security Card' : ''}`,
-                                //     icon: "pi pi-fw pi-file",
-                                //     data: "Security Document",
-                                //     command: () => {
-                                //         router.push({
-                                //             pathname: '/document/search',
-                                //             query: { data: '4504d06b-2358-41cf-a642-9a1928f1497b' }
-                                //             // '/document/search'
-                                //         });
-                                //     }
-                                // }
                             ]
                         },
                     ]
@@ -369,8 +327,8 @@ export default function SideNavbar() {
                             <div key={index} >
                                 <div className={sideNavbarStyles.alignImages}>
                                     {item.hasOwnProperty("icon") && <Image src={item.icon} width={16} height={16} />}
-                                    <div className={clsx("mx-2", sideNavbarStyles.parentLabel)} onClick={() => {setTopMenu(true), handleClick(item.label, index, "settings")}}>{item.label}</div> {/* Settings */}
-                                    {<Image src={DownArrow} style={{transform: settingsTabs.includes(item.label + index) && topMenu ? "rotate(180deg)" : ''}} width={16} height={16} />}
+                                    <div className={clsx("mx-2", sideNavbarStyles.parentLabel)} onClick={() => { setTopMenu(true), handleClick(item.label, index, "settings") }}>{item.label}</div> {/* Settings */}
+                                    {<Image src={DownArrow} style={{ transform: settingsTabs.includes(item.label + index) && topMenu ? "rotate(180deg)" : '' }} width={16} height={16} />}
                                 </div>
                                 {topMenu && settingsTabs.includes(item.label + index) &&
                                     item.items.map((item, index) => {
@@ -378,7 +336,7 @@ export default function SideNavbar() {
                                             <>
                                                 <div className={sideNavbarStyles.alignImages}>
                                                     <div className={clsx("mx-3", sideNavbarStyles.parentLabel)} onClick={() => handleClick(item.label, index, "settings")}>{item.label}</div>
-                                                    {<Image src={DownArrow} style={{transform: settingsTabs.includes(item.label + index) ? "rotate(180deg)" : ''}} width={16} height={16} />}
+                                                    {<Image src={DownArrow} style={{ transform: settingsTabs.includes(item.label + index) ? "rotate(180deg)" : '' }} width={16} height={16} />}
                                                 </div>
                                                 {settingsTabs.includes(item.label + index) &&
                                                     item.items.map((subItem, index) => {
@@ -408,7 +366,7 @@ export default function SideNavbar() {
                                 <div className={sideNavbarStyles.alignImages} onClick={() => { handleClick(item.label, index, "endUser"); handleRoute(item.label) }}>
                                     {item.hasOwnProperty("icon") && <Image src={item.icon} width={16} height={16} />}
                                     <div className={clsx("mx-2", sideNavbarStyles.parentLabel)}>{item.label}</div>
-                                    {item.hasOwnProperty('items') && <Image src={DownArrow} style={{transform: endUserTabs.includes(item.label + index) ? "rotate(180deg)" : ''}} width={16} height={16} />}
+                                    {item.hasOwnProperty('items') && <Image src={DownArrow} style={{ transform: endUserTabs.includes(item.label + index) ? "rotate(180deg)" : '' }} width={16} height={16} />}
                                 </div>
                                 {
                                     item.hasOwnProperty('items') && endUserTabs.includes(item.label + index) &&
@@ -418,11 +376,11 @@ export default function SideNavbar() {
                                                 <div className={sideNavbarStyles.alignImages} onClick={() => handleClick(item.label, subIndex + 4, "endUser")}>
                                                     {subItem.label === "Awaiting For Me" || subItem.label === "Approved" || subItem.label === "Rejected" ?
                                                         <div className={clsx("mx-3", selectedDashboard === subItem.label + subIndex ? sideNavbarStyles.activeChildLabel : '')} onClick={() => handleRoute(subItem.label + subIndex)}>{subItem.label}</div>
-                                                    :
-                                                    <>
-                                                        <div className={clsx("mx-3", sideNavbarStyles.parentLabel)}>{subItem.label}</div>
-                                                        {subItem.hasOwnProperty('items') && <Image src={DownArrow} style={{transform: endUserTabs.includes(item.label + (subIndex + 4)) ? "rotate(180deg)" : ''}} width={16} height={16} />}
-                                                    </>
+                                                        :
+                                                        <>
+                                                            <div className={clsx("mx-3", sideNavbarStyles.parentLabel)}>{subItem.label}</div>
+                                                            {subItem.hasOwnProperty('items') && <Image src={DownArrow} style={{ transform: endUserTabs.includes(item.label + (subIndex + 4)) ? "rotate(180deg)" : '' }} width={16} height={16} />}
+                                                        </>
                                                     }
                                                 </div>
                                                 {subItem.hasOwnProperty('items') && endUserTabs.includes(item.label + (subIndex + 4)) &&
@@ -444,7 +402,7 @@ export default function SideNavbar() {
             }
             <Tree value={node} selectionMode="single" selectionKeys={selectedKey}
                 onSelectionChange={(e) => { documentMenuClick(e); }}
-                className="w-full md:w-20rem" style={{ backgroundColor: '#024f7c', paddingRight: '0', paddingLeft: '0' }} />
+                className="w-full md:w-15rem" style={{ backgroundColor: '#024f7c', paddingRight: '0', paddingLeft: '0', border: 'none', paddingTop: '0' }} />
         </>
     )
 

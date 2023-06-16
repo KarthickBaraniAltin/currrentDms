@@ -14,7 +14,7 @@ import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { Dialog } from 'primereact/dialog';
 import Moment from "moment";
-import { dateFormat } from "../../../helpers/utilities";
+import { dateFormat } from "../../../utillites/dateFormat";
 
 export default function AdvancedDemos() {
     let baseApi = process.env.NEXT_PUBLIC_DMSBASEAPI;
