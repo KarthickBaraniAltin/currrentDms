@@ -1,0 +1,12 @@
+.signature {
+    min-height: 43px;
+    max-height: 43px;
+    padding-left: 4% !important;
+}
+
+.paragraph {
+    border: 2px solid #004990;
+    padding-top: 3% !important;
+    min-height: 40px;
+    max-height: 40px;
+}

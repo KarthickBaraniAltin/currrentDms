@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="787" height="344" viewBox="0 0 787 344">
+  <defs>
+    <filter id="Rectangle_1458" x="0" y="0" width="787" height="344" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#00b9ff" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_17_1" data-name="Component 17 – 1" transform="translate(30 27)">
+    <g transform="matrix(1, 0, 0, 1, -30, -27)" filter="url(#Rectangle_1458)">
+      <g id="Rectangle_1458-2" data-name="Rectangle 1458" transform="translate(30 27)" fill="#fff" stroke="#00b9ff" stroke-width="2">
+        <path d="M142,0H707a20,20,0,0,1,20,20V264a20,20,0,0,1-20,20H142A142,142,0,0,1,0,142v0A142,142,0,0,1,142,0Z" stroke="none"/>
+        <path d="M142,1H707a19,19,0,0,1,19,19V264a19,19,0,0,1-19,19H142A141,141,0,0,1,1,142v0A141,141,0,0,1,142,1Z" fill="none"/>
+      </g>
+    </g>
+    <text id="Upload_A_Batch" data-name="Upload A Batch" transform="translate(289 117)" fill="#003459" font-size="26" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="0">Upload A Batch</tspan></text>
+    <text id="Upload_Or_Scan_documents_and_process_them_one_by_one" data-name="Upload Or Scan documents and process them one by one" transform="translate(289 137)" fill="#003459" font-size="20" font-family="OpenSans-Medium, Open Sans" font-weight="500"><tspan x="0" y="21">Upload Or Scan documents and </tspan><tspan x="0" y="48">process them one by one</tspan></text>
+    <g id="Group_2451" data-name="Group 2451">
+      <circle id="Ellipse_14" data-name="Ellipse 14" cx="105.5" cy="105.5" r="105.5" transform="translate(38 37)" fill="#00b9ff"/>
+      <g id="Group_2442" data-name="Group 2442" transform="translate(63 -248.463)">
+        <g id="document_1_" data-name="document (1)" transform="translate(42.278 340.509)">
+          <line id="Line_4" data-name="Line 4" x1="40.073" transform="translate(24.484 71.797)" fill="none" stroke="#003459" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+          <line id="Line_5" data-name="Line 5" x1="40.073" transform="translate(24.484 49.49)" fill="none" stroke="#003459" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+          <line id="Line_6" data-name="Line 6" x1="15.291" transform="translate(25.079 27.232)" fill="none" stroke="#003459" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+          <path id="Path_73" data-name="Path 73" d="M65.539.75,24.565.771C9.858.862.751,10.539.751,25.3v49c0,14.836,9.176,24.55,24.012,24.55l40.974-.016c14.708-.091,23.82-9.773,23.82-24.534v-49C89.556,10.464,80.375.75,65.539.75Z" transform="translate(-0.751 -0.75)" fill="none" stroke="#003459" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" fill-rule="evenodd"/>
+        </g>
+        <path id="Path_74" data-name="Path 74" d="M-1.461,9.588V37.979s.7,28.582,29.206,32.6c25.247.783,23.937,0,31.916,0" transform="translate(31.461 379.975)" fill="none" stroke="#003459" stroke-width="5"/>
+      </g>
+    </g>
+  </g>
+</svg>

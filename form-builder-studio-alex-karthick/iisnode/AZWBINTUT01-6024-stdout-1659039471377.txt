@@ -1,0 +1,149 @@
+> Ready on http://localhost:\\.\pipe\a105e601-bd8b-427a-bd2f-2fa6ce927b12
+Response {
+  size: 0,
+  timeout: 0,
+  [Symbol(Body internals)]: {
+    body: PassThrough {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kCallback)]: null
+    },
+    disturbed: false,
+    error: null
+  },
+  [Symbol(Response internals)]: {
+    url: 'https://connect2.csn.edu/snap-student/api/snapapplication/CareerReadiness?id=70',
+    status: 200,
+    statusText: 'OK',
+    headers: Headers { [Symbol(map)]: [Object: null prototype] },
+    counter: 0
+  }
+}
+Response {
+  size: 0,
+  timeout: 0,
+  [Symbol(Body internals)]: {
+    body: PassThrough {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kCallback)]: null
+    },
+    disturbed: false,
+    error: null
+  },
+  [Symbol(Response internals)]: {
+    url: 'https://connect2.csn.edu/snap-student/api/snapapplication/EmploymentPlan?id=70',
+    status: 200,
+    statusText: 'OK',
+    headers: Headers { [Symbol(map)]: [Object: null prototype] },
+    counter: 0
+  }
+}
+{
+  id: 70,
+  firstName: '',
+  lastName: '',
+  fullName: 'Brent Gschwend',
+  status: 'Received',
+  createdDate: '2022-07-28T18:26:32.0021979',
+  email: 'ahmet_fatih_cengiz@hotmail.com',
+  dateOfBirth: '2022-07-28T00:00:00',
+  idType: 'NSHE ID',
+  idNumber: 5004423900,
+  enrollmentStatus: 'Currently enrolled in a credit class',
+  requestedServices: [ 'Workfare', 'Uncompensted Work Experience' ]
+}
+{
+  value: {
+    isValid: false,
+    errors: [ [Object], [Object] ],
+    ruleSetsExecuted: [ 'default' ]
+  },
+  formatters: [],
+  contentTypes: [],
+  declaredType: null,
+  statusCode: 400
+}
+{
+  id: 70,
+  firstName: '',
+  lastName: '',
+  fullName: 'Brent Gschwend',
+  status: 'Received',
+  createdDate: '2022-07-28T18:26:32.0021979',
+  email: 'ahmet_fatih_cengiz@hotmail.com',
+  idType: 'NSHE ID',
+  idNumber: 5004423900,
+  enrollmentStatus: 'Currently enrolled in a credit class',
+  requestedServices: [ 'Workfare', 'Uncompensted Work Experience' ]
+}
+{
+  value: {
+    isValid: false,
+    errors: [ [Object], [Object], [Object] ],
+    ruleSetsExecuted: [ 'default' ]
+  },
+  formatters: [],
+  contentTypes: [],
+  declaredType: null,
+  statusCode: 400
+}
+{
+  id: 70,
+  firstName: '',
+  lastName: '',
+  fullName: 'Brent Gschwend',
+  status: 'Received',
+  createdDate: '2022-07-28T18:26:32.0021979',
+  email: 'ahmet_fatih_cengiz@hotmail.com',
+  idType: 'NSHE ID',
+  idNumber: 5004423900,
+  enrollmentStatus: 'Currently enrolled in a credit class',
+  requestedServices: []
+}
+{
+  value: {
+    isValid: false,
+    errors: [ [Object], [Object], [Object], [Object] ],
+    ruleSetsExecuted: [ 'default' ]
+  },
+  formatters: [],
+  contentTypes: [],
+  declaredType: null,
+  statusCode: 400
+}
+Response {
+  size: 0,
+  timeout: 0,
+  [Symbol(Body internals)]: {
+    body: PassThrough {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kCallback)]: null
+    },
+    disturbed: false,
+    error: null
+  },
+  [Symbol(Response internals)]: {
+    url: 'https://connect2.csn.edu/snap/api/file/invoice/excel?month=July&year=2022',
+    status: 200,
+    statusText: 'OK',
+    headers: Headers { [Symbol(map)]: [Object: null prototype] },
+    counter: 0
+  }
+}

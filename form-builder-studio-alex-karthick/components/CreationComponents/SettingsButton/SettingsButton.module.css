@@ -1,0 +1,21 @@
+.settings {
+    font-size: 1em;
+    align-self: flex-end;
+    margin-bottom: 0.25rem;
+    color: rgb(255, 255, 255); 
+}
+
+.tooltip {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 0.5rem);
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: black;
+    padding: 0.25rem;
+}
+
+.tooltipButton {
+    margin-top: 0.25rem;
+    margin-right: 0.5rem;
+}

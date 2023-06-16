@@ -1,0 +1,7 @@
+Application has thrown an uncaught exception and is terminated:
+Error: Could not find a production build in the 'D:\inetpub\OTSPro\snap-admin\.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at NextNodeServer.getBuildId (D:\inetpub\OTSPro\snap-admin\node_modules\next\dist\server\next-server.js:137:23)
+    at new Server (D:\inetpub\OTSPro\snap-admin\node_modules\next\dist\server\base-server.js:91:29)
+    at new NextNodeServer (D:\inetpub\OTSPro\snap-admin\node_modules\next\dist\server\next-server.js:84:9)
+    at NextServer.createServer (D:\inetpub\OTSPro\snap-admin\node_modules\next\dist\server\next.js:109:16)
+    at async D:\inetpub\OTSPro\snap-admin\node_modules\next\dist\server\next.js:121:31

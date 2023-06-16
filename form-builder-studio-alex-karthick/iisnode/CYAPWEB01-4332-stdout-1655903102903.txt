@@ -1,0 +1,26 @@
+> Ready on http://localhost:\\.\pipe\f3644bba-2690-4bde-9183-64432cc1778c
+Response {
+  size: 0,
+  timeout: 0,
+  [Symbol(Body internals)]: {
+    body: PassThrough {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 5,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kCallback)]: null
+    },
+    disturbed: false,
+    error: null
+  },
+  [Symbol(Response internals)]: {
+    url: 'https://connect2.csn.edu/snap/api/file/invoice/excel?month=June&year=2022',
+    status: 200,
+    statusText: 'OK',
+    headers: Headers { [Symbol(map)]: [Object: null prototype] },
+    counter: 0
+  }
+}

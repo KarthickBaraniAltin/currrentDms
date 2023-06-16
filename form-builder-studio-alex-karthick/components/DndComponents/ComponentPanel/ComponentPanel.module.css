@@ -1,0 +1,23 @@
+
+.accordion {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 0.6rem; */
+}
+
+.accordionField {
+    color: #003459;
+    font-weight: 600;
+}
+
+.accordionButton {
+    color: #003459;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0.5rem;
+    font-size: 24px;
+}
+
+.horizontalLine {
+    border-bottom: 2px solid #003459;
+}

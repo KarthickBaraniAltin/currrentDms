@@ -1,0 +1,132 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+ branches:
+   include:
+     - uat
+
+variables:
+  projectName: 'form-builder-studio'
+  websiteName: 'test'
+  appPoolName: 'Form-Builder-Studio'
+  appName: 'form-builder-studio'
+  distDirectory: '$(System.DefaultWorkingDirectory)/dist'
+  websitePhysicalPath: 'E:\inetpub\Test\$(appName)'
+
+stages:
+- stage: 'Build'
+  displayName: 'Build'
+  pool:
+    vmImage: windows-latest
+    
+  jobs:
+     - job:
+       steps:  
+        - task: Cache@2
+          displayName: 'Cache node_modules'
+          inputs:
+            key: node_modules | $(Agent.OS) | package.json | yarn.lock
+            path: '$(System.DefaultWorkingDirectory)/node_modules'
+
+        - task: Cache@2
+          displayName: 'Cache .next/cache'
+          inputs:
+            key: next | $(Agent.OS) | package.json | yarn.lock
+            path: '$(System.DefaultWorkingDirectory)/.next/cache'
+       
+        - script: yarn --frozen-lockfile --network-timeout=100000
+          displayName: 'yarn install'
+
+        - script: yarn build:test
+          displayName: 'yarn build:test'
+        
+        - task: CopyFiles@2
+          displayName: 'Copy Next build to dist'
+          inputs:
+            SourceFolder: '$(System.DefaultWorkingDirectory)'
+            Contents: '**'
+            TargetFolder: '$(distDirectory)'
+
+        - task: ArchiveFiles@2
+          displayName: 'Archive dist to build artifacts'
+          inputs:
+            rootFolderOrFile: '$(distDirectory)'
+            includeRootFolder: false
+            archiveFile: '$(Build.ArtifactStagingDirectory)/dist.zip'
+          
+        - task: PublishBuildArtifacts@1
+          displayName: 'Publish artifacts'
+
+- stage: 'Deplot'
+  displayName: 'Deploy'
+  dependsOn: 'Build'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/uat'))
+  jobs:
+   - deployment: UAT
+     displayName: UAT
+     environment: 
+       name: 'UAT Server Form Builder Studio'    
+       resourceType: VirtualMachine
+
+     strategy:
+      runOnce:
+        deploy:
+          steps: 
+          - task: ExtractFiles@1
+            displayName: 'Extract dist files'
+            inputs:
+              archiveFilePatterns: '$(Pipeline.Workspace)/**/*.zip'
+              destinationFolder: '$(distDirectory)'
+          - task: IISWebAppManagementOnMachineGroup@0
+            displayName: Create or Update AppPool
+            inputs:
+              IISDeploymentType: IISApplicationPool
+              ActionIISApplicationPool: CreateOrUpdateAppPool
+              AppPoolName: '$(appPoolName)'
+              DotNetVersion: No Managed Code
+
+          - task: IISWebAppManagementOnMachineGroup@0
+            displayName: Start AppPool
+            inputs:
+              IISDeploymentType: IISApplicationPool
+              ActionIISApplicationPool: StartAppPool
+              StartStopRecycleAppPoolName: '$(appPoolName)'
+              
+          - task: IISWebAppManagementOnMachineGroup@0
+            displayName: Stop AppPool
+            inputs:
+              IISDeploymentType: IISApplicationPool
+              ActionIISApplicationPool: StopAppPool
+              StartStopRecycleAppPoolName: '$(appPoolName)'
+          
+          - task: IISWebAppManagementOnMachineGroup@0
+            displayName: Set IIS Configurations
+            inputs:        
+              IISDeploymentType: 'IISWebApplication'
+              VirtualPathForVD: '$(appName)'
+              WebsiteName: '$(websiteName)'
+              ParentWebsiteNameForApplication: '$(websiteName)'
+              PhysicalPathForApplication: '$(websitePhysicalPath)'
+              VirtualPathForApplication: '/$(appName)'
+              CreateOrUpdateAppPoolForApplication: true
+              DotNetVersionForApplication: No Managed Code
+              AppPoolNameForApplication: '$(appPoolName)'
+              PipeLineModeForApplication: 'Integrated'
+              AddBinding: false
+
+          - task: IISWebAppDeploymentOnMachineGroup@0
+            displayName: Deploy To IIS
+            inputs:
+              WebSiteName: '$(websiteName)'
+              VirtualApplication: '$(appName)'
+              Package: '$(distDirectory)'
+
+          - task: IISWebAppManagementOnMachineGroup@0
+            displayName: Start AppPool
+            inputs:
+              IISDeploymentType: IISApplicationPool
+              ActionIISApplicationPool: StartAppPool
+              StartStopRecycleAppPoolName: '$(appPoolName)'

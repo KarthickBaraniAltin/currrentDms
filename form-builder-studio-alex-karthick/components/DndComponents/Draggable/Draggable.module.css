@@ -1,0 +1,15 @@
+.draggable {
+    color: #003459;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+#noMarginBottom {
+    margin-bottom: 0;
+}

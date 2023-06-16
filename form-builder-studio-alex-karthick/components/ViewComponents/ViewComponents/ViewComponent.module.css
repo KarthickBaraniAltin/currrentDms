@@ -1,0 +1,46 @@
+.labelWidthContainer {
+    width: 13.6%;
+}
+
+.inputsContainer {
+    width: 84.7%;
+}
+
+/* Image Styles */
+
+.imageWrapper {
+    position: relative;
+}
+
+.imageWrapper img {
+    position: relative !important;
+}
+
+.labelContainer {
+    width: 13.5%;
+    text-align: right;
+    margin-right: 0px;
+}
+
+/* File Styles */
+
+.fileDowloadLabel {
+    font-weight: 600;
+    cursor: pointer
+}
+
+.fileDownloadIcon {
+    color: blue;
+    cursor: pointer
+}
+
+/* RichText Styles */
+
+.labelContainerRichText {
+    width: 13.4%;
+    text-align: right;
+}
+
+.inputsContainerRichText {
+    width: 85.2%;
+}

@@ -1,0 +1,30 @@
+.addButton {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.background {
+    background-color: #f2f2f2b9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(56, 56, 56, 0.838);
+    padding: 0.5rem;
+}
+
+.buttonContainer {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteButton {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(251, 5, 5);
+    cursor: pointer;
+}

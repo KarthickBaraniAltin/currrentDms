@@ -1,0 +1,22 @@
+.imageWrapper {
+    position: relative;
+}
+
+.imageWrapper img {
+    position: relative !important;
+}
+
+.rightBorder {
+    border-right: 5px;
+}
+
+.labelContainer {
+    width: 12.9%;
+    text-align: right;
+    margin-right: 0px;
+}
+
+.inputsContainer {
+    width: 86%;
+    padding-bottom: 2%;
+}

@@ -1,0 +1,34 @@
+.slideMenuContainer {
+    display: flex;
+    height: 728px;
+    width: 25%;
+}
+
+.slideMenu {
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+    height: 100%;
+}
+
+.slideMenu.active {
+    transform: translateX(0);
+}
+
+.accordion {
+    margin-bottom: 0.6rem;
+}
+
+.accordionField {
+    color: white;
+    font-weight: 600;
+}
+
+.accordionButton {
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0.5rem;
+    font-size: 24px;
+}

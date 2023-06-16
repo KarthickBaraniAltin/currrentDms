@@ -1,0 +1,11 @@
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: 700;
+    font-size: 3ch;
+}
+
+.rightBorder {
+    border-right: 5px solid black;
+}

@@ -1,0 +1,9 @@
+.fileDowloadLabel {
+    font-weight: 600;
+    cursor: pointer
+}
+
+.fileDownloadIcon {
+    color: blue;
+    cursor: pointer
+}

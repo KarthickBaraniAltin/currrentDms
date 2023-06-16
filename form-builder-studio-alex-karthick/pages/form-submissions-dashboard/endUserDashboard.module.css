@@ -1,0 +1,32 @@
+.formHeader {
+    margin: 0;
+    color: white;
+}
+
+.formOption {
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.formOption:hover {
+    color: #5FDE33;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.title {
+    color: white;
+}
+
+.sideMenuButtons {
+    background-color: #2C7ECA;
+    border: 0;
+}
+
+.fillOutFormToolTip {
+    position: absolute;
+    bottom: 420px;
+    padding: 0.25rem 1rem;
+    background-color: #ECE9E6;
+    color: black;
+}

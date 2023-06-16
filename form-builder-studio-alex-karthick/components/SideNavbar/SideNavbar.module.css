@@ -1,0 +1,36 @@
+
+.sideNavbarColors {
+    color: #E8EEF2;
+    background-color: #024F7C;
+}
+
+.adminSettingsLabel {
+    cursor: pointer;
+    margin: 1rem 0 0 0;
+}
+
+.parentLabel {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.childLabel {
+    font-size: 16px;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.activeChildLabel {
+    color: #90EE90;
+}
+
+.dividingLine {
+    border-bottom: 2px solid #E8EEF2;
+}
+
+.alignImages {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 1rem 0;
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="787" height="344" viewBox="0 0 787 344">
+  <defs>
+    <filter id="Rectangle_1457" x="0" y="0" width="787" height="344" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#002138" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_16_1" data-name="Component 16 – 1" transform="translate(30 27)">
+    <g transform="matrix(1, 0, 0, 1, -30, -27)" filter="url(#Rectangle_1457)">
+      <g id="Rectangle_1457-2" data-name="Rectangle 1457" transform="translate(30 27)" fill="#fff" stroke="#003459" stroke-width="2">
+        <path d="M142,0H707a20,20,0,0,1,20,20V264a20,20,0,0,1-20,20H142A142,142,0,0,1,0,142v0A142,142,0,0,1,142,0Z" stroke="none"/>
+        <path d="M142,1H707a19,19,0,0,1,19,19V264a19,19,0,0,1-19,19H142A141,141,0,0,1,1,142v0A141,141,0,0,1,142,1Z" fill="none"/>
+      </g>
+    </g>
+    <text id="Upload_Forms_Of_The_Same_Type" data-name="Upload Forms Of The Same Type" transform="translate(289 64)" fill="#003459" font-size="26" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="28">Upload Forms Of The </tspan><tspan x="0" y="64">Same Type</tspan></text>
+    <g id="Group_2450" data-name="Group 2450">
+      <circle id="Ellipse_15" data-name="Ellipse 15" cx="105.5" cy="105.5" r="105.5" transform="translate(38 37)" fill="#002138"/>
+      <g id="document_1_" data-name="document (1)" transform="translate(92.958 87.166)">
+        <line id="Line_4" data-name="Line 4" x1="40.073" transform="translate(30.653 81.724)" fill="none" stroke="#00b9ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <line id="Line_5" data-name="Line 5" x1="40.073" transform="translate(30.653 56.333)" fill="none" stroke="#00b9ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <line id="Line_6" data-name="Line 6" x1="15.291" transform="translate(29.268 30.997)" fill="none" stroke="#00b9ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <path id="Path_73" data-name="Path 73" d="M74.5.75,27.858.774C11.117.877.751,11.892.751,28.694v55.78c0,16.887,10.445,27.944,27.332,27.944l46.639-.018c16.741-.1,27.113-11.124,27.113-27.926V28.694C101.835,11.807,91.383.75,74.5.75Z" transform="translate(-0.751 -0.75)" fill="none" stroke="#00b9ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <text id="Upload_Or_Scan_documents_and_process_them_one_by_one" data-name="Upload Or Scan documents and process them one by one" transform="translate(289 152)" fill="#003459" font-size="20" font-family="OpenSans-Medium, Open Sans" font-weight="500"><tspan x="0" y="21">Upload Or Scan documents and </tspan><tspan x="0" y="48">process them one by one</tspan></text>
+  </g>
+</svg>

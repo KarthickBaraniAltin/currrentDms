@@ -1,0 +1,15 @@
+.input {
+    min-height: 43px;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    max-height: 43px;
+}
+
+.labelContainer {
+    width: 13%;
+    text-align: right;
+}
+
+.inputsContainer {
+    width: 85%;
+}

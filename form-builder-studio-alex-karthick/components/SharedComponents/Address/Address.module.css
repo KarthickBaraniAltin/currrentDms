@@ -1,0 +1,13 @@
+.fieldContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.labelAlignment {
+    margin-right: 0.5rem;
+}
+
+.componentAlignment {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,13 @@
+> Ready on http://localhost:\\.\pipe\baeb0006-7522-4a4d-9943-2441d6bdde90
+Sending =  {
+  azureID: '0051196a-beaa-422a-85c1-c4067bd0836d',
+  firstName: 'CHRISTOPHER',
+  lastName: 'massa',
+  email: 'CHRISTOPHER.ALFONSO@student.csn.edu',
+  birthDate: '2022-05-03',
+  idType: 'NSHE ID',
+  learnerID: '',
+  nsheID: '1002003000',
+  snapStatus: 'Active SNAP',
+  enrollmentStatus: 'Currently enrolled in a credit class'
+}

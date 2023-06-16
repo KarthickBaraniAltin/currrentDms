@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%;
+    cursor: move;
+}
+
+.handle {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+}

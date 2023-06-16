@@ -1,0 +1,6 @@
+.background {
+    background-color: #acacac2e;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(56, 56, 56, 0.838); */
+    padding: 0.5rem !important;
+}
